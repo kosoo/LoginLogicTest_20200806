@@ -13,11 +13,14 @@ class MainActivity : AppCompatActivity() {
         loginBtn.setOnClickListener {
 
             val userId = userId.text.toString()
-            if (userId == "admin@test.com" && userId == "qwer") {
+            val passTxt = passTxt.text.toString()
+
+            if (userId == "admin@test.com" && passTxt == "qwer") {
                 Toast.makeText(this, "관리자입니다.", Toast.LENGTH_SHORT).show()
             } else {
                 Toast.makeText(this, "로그인실패.", Toast.LENGTH_SHORT).show()
             }
+
         }
     }
 }
